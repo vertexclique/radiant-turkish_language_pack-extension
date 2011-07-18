@@ -1,0 +1,237 @@
+---
+tr: 
+  account: 'Hesap'
+  activerecord:
+    errors:
+      messages:
+        blank: 'burası boş olmamalı' # required
+        invalid: 'bu formata uygun değil' #invalid_format
+        not_a_number: 'bu mutlaka sayı olmalı' # must be number
+        not_a_page: "burada bir sayfa olmalı"
+        not_permitted: 'burası mutlaka izin verilen değerlerde olmalı'
+        taken: 'bu isim zaten kullanımda' # name_in_use
+        too_long: 'burası mutlaka %{count} karakterden uzun olmamalı' # character_limit
+        too_short: 'burası mutlaka %{count} karakterden kısa olmamalı' # character_minimum
+      models:
+        page:
+          attributes:
+            slug:
+              taken: 'Slug sayfa kardeş sayfalar tarafından kullanılıyor' # slug_in_use
+        user:
+          attributes:
+            email:
+              invalid: 'bu geçerli bir e-mail adresi değil' # invalid_email
+            login:
+              taken: 'bu oturum zaten açık ve kullanılıyor' # login already in use
+            password:
+              confirmation: 'parola uyumu sağlanmalı' # password_confirmation
+  add_child: 'Alt Sayfa Ekle'
+  add_field: 'Alan Ekle'
+  add_part: 'Bölüm Ekle'
+  add_tab: 'Tab Ekle'
+  admin: 'Yönetici' 
+  available_tags: 'Kullanılabilir Etiketler'
+  available_tags_for: '%{name} için Kullanılabilir Etiketler'
+  body: 'Gövde'
+  breadcrumb: 'Tam hazır olmayan taslak'
+  buttons:
+    create: '%{name} Oluştur'
+    save_and_continue: 'Kaydet ve Düzenlemeye Devam Et'
+    save_changes: 'Değişiklikleri Kaydet'  
+  cancel: 'İptal Et'
+  change: 'Değiştir'
+  close: 'Kapat'
+  config:
+    admin:
+      title: 'Yönetici Başlık İsmi'
+    defaults:
+      locale: 'varsayılan dil'
+      page:
+        fields: "sayfa alanları"
+        filter: "sayfa filtresi"
+        parts: "sayfa bölümleri"
+        status: "sayfa durumu"
+      snippet:
+        filter: "snippet filtresi"
+    dev:
+      host: "geliştirici sitesi domaini"
+    local:
+      timezone: "yerel zamandilimi"
+    site:
+      title: "site başlığı"
+      host: "site domaini"
+    user:
+      allow_password_reset?: "parola sıfırlamaya izin ver"
+  content: 'İçerik'
+  content_type: 'İçerik Tipi'    
+  creating_status: 'Oluşturuluyor %{model}'
+  date:
+    abbr_day_names: [Pzr, Pzt, Sal, Çrş, Prş, Cum, Cmt]
+    abbr_month_names: [~, Ock, Şub, Mar, Nis, May, Haz, Tem, Ağu, Eyl, Eki, Kas, Ara]
+    day_names: [Pazar, Pazartesi, Salı, Çarşamba, Perşembe, Cuma, Cumartesi]
+    formats:
+      default: "%d-%m-%Y"
+      long: "%B %e, %Y"
+      only_day: "%e"
+      short: "%e %b"
+    month_names: [~, Ocak, Şubat, Mart, Nisan, Mayıs, Haziran, Temmuz, Ağustos, Eylül, Ekim, Kasım, Aralık]   
+    order: [ :day, :month, :year ]
+  delete_layout: 'Görünüm Düzenini Sil'
+  delete_pages: '%{pages} sayfalarını sil'
+  delete_snippet: 'Snippet Sil'
+  delete_user: 'Kullanıcı Sil'
+  description: 'Açıklama'
+  design: 'Dizayn'
+  designer: 'Dizayncı'
+  draft: 'Taslak'
+  edit: 'Düzenle'
+  edit_configuration: 'Konfigürasyon Düzenle'
+  edit_layout: 'Görünümü Düzenle'
+  edit_page:  'Sayfa Düzenle'
+  edit_preferences: 'Tercih Düzenle'
+  edit_settings: 'Ayar Düzenle'
+  edit_snippet: 'Snippet Düzenle'
+  edit_user: 'Kullanıcı Düzenle'
+  email_address: 'E-mail Adresi'
+  extension: 'Eklenti'
+  extensions: 'Eklentiler'
+  filter: 'Filtre'
+  hidden: 'Gizlenmiş'
+  hide: 'Gizle' 
+  keywords: 'Anahtar Kelimeler'
+  language: 'Dil'
+  layout: 'Görünüm'
+  layouts: 'Görünümler'
+  log_out: 'Çıkış yap'
+  logged_in_as: 'Giriş yapan: '
+  login: 'Giriş Yap'
+  modify: 'Değiştir'
+  more: 'Fazlası...'
+  more_info: 'Daha Fazla Bilgi...'
+  name: 'İsim'
+  new_homepage: 'Yeni Anasayfa'
+  new_layout: 'Yeni Görünüm'    
+  new_page: 'Yeni Sayfa'
+  new_password: 'Yeni Parola'
+  new_snippet: 'Yeni Snippet'
+  new_user: 'Yeni Kullanıcı'  
+  'no': 'Hayır'
+  no_layouts: 'Görünüm Yok'
+  no_pages: 'Sayfa Yok'
+  no_snippets: 'Snippet Yok'
+  normal_page: 'Normal Sayfa'
+  notes: 'Notlar'    
+  optional: 'Opsiyonel'
+  or: 'ya da'
+  page: 'Sayfa'
+  page_hierarchy: 'Geçerli sistenin sayfa hiyerarşisi'
+  page_page: 'Sayfa Bölümü'
+  page_title: 'Sayfa Başlığı'  
+  page_type: 'Sayfa Tipi'
+  pages: 'Sayfalar'
+  pages_controller:
+    removed_many: "Sayfalar siteden başarıyla silindi."   
+    removed_one: "Sayfa siteden başarıyla silindi."  
+    saved: "Sayfanız kaydedildi."  
+  password: 'Parola' 
+  password_confirmation: 'Parola Doğrula'
+  personal: 'Kişisel'
+  personal_preferences: 'Kişisel Tercihler'
+  please_login: 'Lütfen Giriş Yapın'
+  powered_by: 'Arkasındaki güç'
+  preferences: 'Tercihler' 
+  preferences_controller:
+    error_updating: 'Tercihleriniz güncellerinirken bir hata ile karşılaşıldı.'      
+    updated: 'Tercihleriniz güncellendi.' 
+  preview: 'Önizleme'
+  published: 'Yayınlandı'
+  published_at: 'Yayınlanma yeri' 
+  published_on: 'Yayınlanma zamanı'
+  reference:  'Referans'
+  remember_me: 'Beni hatırla'
+  remember_me_in_this_browser: 'Beni bu tarayıcıda hatırla'
+  remove: 'Sil'
+  remove_field: 'Alan Sil'
+  remove_layout: 'Görünüm Sil'
+  remove_page: 'Sayfa Sil'
+  remove_pages: '%{pages} Sil'
+  remove_snippet: 'Snippet Sil'
+  remove_tab: 'Tab Sil'
+  remove_user: 'Kullanıcı Sil'
+  required: 'Gerekli'  
+  resource_controller:
+    not_found: "%{humanized_model_name} bulunamadı."
+    removed: "%{humanized_model_name} silinmiş."
+    saved: "%{humanized_model_name} kaydedildi."
+    update_conflict: "%{humanized_model_name} son yüklemeden beri modifiye edilmiş. Veri kaybı olmadan silinmesi mümkün değil."
+    validation_errors: "Bu form işlenirken onaylama hataları oluştu. Devam etmeden önce formunuzu gözden geçirip hataları düzeltiniz."
+  reviewed: 'Gözden geçirildi'
+  roles: 'Roller'
+  saving_changes: Değişiklikler kaydediliyor
+  saving_preferences: Tercihler kaydediliyor
+  scheduled: "Zamanlandı"
+  search_tags: 'Etiket Ara:'
+  select:
+    default: '<varsayılan>'
+    inherit: '<dahili>'
+    none: '<hiçbiri>' 
+    normal: '<normal>'
+  settings: 'Ayarlar'
+  show_all: 'Hepsini Göster'
+  slug: 'Slug Sayfa'
+  snippet: 'Snippet'   
+  snippets: 'Snippetler'
+  status: 'Durum'
+    # Warnings and info text:
+  testing: Test yapılıyor
+  text:
+    layouts:
+      remove_warning: '<strong class="warning">permanently remove</strong> görünümüne geçmeye emin misiniz?'   
+    pages: 
+      remove_warning: 'Gerçekten <strong class="warning">permanently remove</strong> %{pages} silmeye kararlı mısınız?'
+    snippets:
+      remove_warning: 'Gerçekten <strong class="warning">permanently remove</strong> bu snippeti silecek misiniz?'
+    users: 
+      remove_warning: 'Gerçekten <strong class="warning">permanently remove</strong> bu kullanıcıyı silecek misiniz?'
+  this_file_language: "Turkish" 
+  time:
+    formats:
+      datetime:
+        formats:
+          default: "%m-%Y-%dT%H:%M:%S%Z"
+      default: "%a %b %d %H:%M:%S %Z %Y"   
+      long: "%B %d, %Y %H:%M"
+      only_second: "%S"
+      short: "%d %b %H:%M"
+      time: "%H:%M"
+      timestamp: "%I:%M %p on %B %d, %Y" 
+  timestamp:
+    at: 'at'
+    by: 'by'
+    last_updated: 'Son Güncelleme'
+  type: 'Tip'
+  units:
+    KB: "KB"
+    MB: "MB"
+    GB: "GB"
+    seconds: "saniye"
+    minutes: "dakika"
+    hours: "saat"
+    days: "gün"
+    weeks: "hafta"
+    months: "ay"
+  user: 'Kullanıcı'
+  username: 'Kullanıcı Adı'
+  username_or_email: 'Kullanıcı Adı veya E-mail Adresi'
+  users: 'Kullanıcılar'
+  users_controller:
+    cannot_delete_self: 'Kendinizi silemezsiniz.'    
+  version: 'Versiyon'
+  view_site: 'Siteyi Gör'
+  warning: 'Uyarı'
+  website: 'Websitesi'
+  welcome_controller:
+    invalid_user: 'Geçersiz kullanıcı adı, e-mail adresi, veya parola.' 
+    logged_out: 'Çıkışınız yapıldı. Çıktınız'  
+  'yes': 'Evet'
+  

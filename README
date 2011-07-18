@@ -1,0 +1,9 @@
+= I18n Tr
+
+Turkish language pack for Radiant. Translation consists of
+admin UI strings and description of radiant tags.
+
+== Yapılacaklar (TO-DO's)
+
+Tags in config/locales/tr_available_tags.yml will be translated in Turkish.
+config/locales/tr_available_tags.yml dosyası full türkçeye çevirilecek dikkat edilerek.
